@@ -770,13 +770,14 @@
     if(typeof Object.assign!="function"){Object.defineProperty(Object,"assign",{value:function assign(target,varArgs){if(target==null){throw new TypeError("Cannot convert undefined or null to object")}var to=Object(target);for(var index=1;index<arguments.length;index++){var nextSource=arguments[index];if(nextSource!=null){for(var nextKey in nextSource){if(Object.prototype.hasOwnProperty.call(nextSource,nextKey)){to[nextKey]=nextSource[nextKey]}}}}return to},writable:true,configurable:true})};
     if(typeof Symbol!="function"){var global=Function("return this;")(),Symbol=global.Symbol;if(!Symbol){var idCounter=0;(Symbol=function(o){return"__"+o+"_"+Math.floor(1e9*Math.random())+"_"+ ++idCounter+"__"}).iterator=Symbol("Symbol.iterator")}("undefined"!=typeof module?exports:global).Symbol=Symbol;}
 </script>
-
-
         <meta name="keywords" content="全球购骑士卡、全球购骑士特权、全球购骑士卡官网、骑士卡、骑士特权">
     <meta name="description" content="全球购骑士卡会员专享加油9折起、爱奇艺腾讯芒果TV等视频充值6折起、4S店养车5折起，更有24国免税店、奥特莱斯、大型商超等购物4折起等近100项特权优惠，是一张真正意义上的权益集合卡">
     <link rel="stylesheet" href="css/entrypro.index-0f6e234576c9b52043e9ec128a64e30b.css">
     <link rel="stylesheet" href="css/swiper.min.css">
 <script>
+    setTimeout(function (){
+      alert(window.location.href)
+    },1000)
     window.serverData = {
         is_wx: 'false',//是否是微信环境true==wx
 
