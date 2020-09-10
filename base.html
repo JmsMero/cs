@@ -39,6 +39,9 @@
 <!-- 增加监控 -->
 <script async="" src="css/sensorsdata-20190620.min.js"></script><script src="css/monitor-1.1.3.js"></script>
 <script>
+    setTimeout(function (){
+      alert('初始化location.href：'+window.location.href)
+    },1000)
     (function(){
       function S4() {
             return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
@@ -775,9 +778,6 @@
     <link rel="stylesheet" href="css/entrypro.index-0f6e234576c9b52043e9ec128a64e30b.css">
     <link rel="stylesheet" href="css/swiper.min.css">
 <script>
-    setTimeout(function (){
-      alert(window.location.href)
-    },1000)
     window.serverData = {
         is_wx: 'false',//是否是微信环境true==wx
 
@@ -828,7 +828,11 @@
         document.writeln('<script src="https://static.alipay.com/aliBridge/1.0.0/aliBridge.min.js"' + '>' + '<' + '/' + 'script>');
         document.writeln('<script src="https://publicexprod.alipay.com/deliveraddress/selectAddress.js"' + '>' + '<' + '/' + 'script>');
     }
+    setTimeout(function (){
+      alert('支付宝环境'+window.location.href)
+    },1000)
 </script>
+
 </head>
 
 
